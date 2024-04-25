@@ -18,5 +18,9 @@ body {
   height: 50px;
   background-color: #3f60d9;
 }
-.gallery {
+.search-input {
+  border-radius: 5px;
+}
+.submit-btn {
+  border-radius: 5px;
 }
