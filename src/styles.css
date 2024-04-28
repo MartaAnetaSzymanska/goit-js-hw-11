@@ -57,7 +57,7 @@ img {
 .hidden {
   display: none;
 }
-.footer {
+.more-btn-container {
   display: flex;
   justify-content: center;
 }
