@@ -18,9 +18,11 @@ form.addEventListener('submit', async ev => {
     renderImages(images);
     moreBtn.classList.remove('hidden');
   } catch (error) {
-    Notify.failure(
-      'Sorry, there are no images matching your search query. Please try again.'
-    );
+    if (response === null) {
+      Notify.failure(
+        'Sorry, there are no images matching your search query. Please try again.'
+      );
+    }
   }
 });
 
