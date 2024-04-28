@@ -50,5 +50,5 @@ export function renderImages(images) {
         </div>`;
     })
     .join('');
-  gallery.innerHTML = cardList;
+  gallery.insertAdjacentElement('beforeend', cardList);
 }

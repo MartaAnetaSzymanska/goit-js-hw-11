@@ -57,3 +57,11 @@ img {
 .hidden {
   display: none;
 }
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.load-more {
+  border-radius: 5px;
+  background-color: #3f60d9;
+}
