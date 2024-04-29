@@ -28,8 +28,8 @@ export function renderImages(images) {
   const cardList = images
     .map(image => {
       return `<div class="photo-card">
-          <img src="${image.webformatURL}" alt="${image.tags}" loading="lazy" />
-          <div class="info">
+      <a href = "${image.largeImageURL}"><img src="${image.webformatURL}" alt="${image.tags}" title="${image.tags}" loading="lazy" /></a>
+      <div class="info">
             <p class="info-item">
               <b>Likes</b>
               ${image.likes}
@@ -47,7 +47,7 @@ export function renderImages(images) {
               ${image.downloads}
             </p>
           </div>
-        </div>`;
+      </div>`;
     })
     .join('');
   gallery.insertAdjacentHTML('beforeend', cardList);
