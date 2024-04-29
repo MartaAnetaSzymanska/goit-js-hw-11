@@ -1,6 +1,6 @@
 import axios from 'axios';
 const apiKey = '43560822-853d258fb61c3d5dd4d985685';
-const gallery = document.querySelector('div.gallery');
+export const gallery = document.querySelector('div.gallery');
 
 // export const getImages = async searchParams => {
 //   const response = await axios.get(
@@ -50,5 +50,5 @@ export function renderImages(images) {
         </div>`;
     })
     .join('');
-  gallery.insertAdjacentElement('beforeend', cardList);
+  gallery.insertAdjacentHTML('beforeend', cardList);
 }

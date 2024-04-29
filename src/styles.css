@@ -20,9 +20,11 @@ body {
 }
 .search-input {
   border-radius: 5px;
+  padding: 5px;
 }
 .submit-btn {
   border-radius: 5px;
+  padding: 5px;
 }
 
 .gallery {
@@ -62,6 +64,8 @@ img {
   justify-content: center;
 }
 .load-more {
+  padding: 5px;
   border-radius: 5px;
   background-color: #3f60d9;
+  color: white;
 }
