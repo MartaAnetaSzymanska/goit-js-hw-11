@@ -1,4 +1,6 @@
 import axios from 'axios';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 const apiKey = '43560822-853d258fb61c3d5dd4d985685';
 export const gallery = document.querySelector('div.gallery');
 
@@ -51,4 +53,5 @@ export function renderImages(images) {
     })
     .join('');
   gallery.insertAdjacentHTML('beforeend', cardList);
+  const lightbox = new SimpleLightbox(`.gallery a`);
 }

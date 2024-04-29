@@ -1,9 +1,7 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import axios from 'axios';
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
 
-import { getImages, renderImages, gallery, lightbox } from './services.js';
+import { getImages, renderImages, gallery } from './services.js';
 
 const form = document.querySelector('form#search-form');
 const moreBtn = document.querySelector('button.load-more');
@@ -62,8 +60,4 @@ moreBtn.addEventListener('click', async ev => {
     console.error(error.message);
     Notify.failure('There was an error downloading data. Please try again.');
   }
-});
-gallery.addEventListener('click', ev => {
-  let lightbox = new SimpleLightbox('div.gallery a');
-  lightbox.open();
 });
